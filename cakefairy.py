@@ -52,13 +52,6 @@ def write_names_and_weights(file_path, names, weights):
             writer.writerow([name, weight])
 
 
-def add_name(new_name, names, weights):
-    names.append(new_name)
-    weights.append(max(weights))  # Assign default weight to the new name
-    print(f"Added '{new_name}' to the list of names.")
-
-    return names, weights
-
 def next_wednesday():
     today = datetime.today()
     days_until_wednesday = (2 - today.weekday()) % 7  # 2 is Wednesday (Monday=0, Sunday=6)
@@ -66,6 +59,7 @@ def next_wednesday():
         days_until_wednesday = 7  # If today is Wednesday, get next week's Wednesday
     next_wed = today + timedelta(days=days_until_wednesday)
     return next_wed.day  # Return the day of the month
+
 
 def main():
 
@@ -75,11 +69,10 @@ def main():
 
     num_to_draw = 3
     drawn_names, new_weights = select_names(names=names, weights=weights, num_selections=num_to_draw)
+    
     write_names_and_weights(file_path, names, new_weights)
-    print(f"Drawn names: {', '.join(drawn_names)}")
 
-
-# Generate new content
+    # Generate new content
     now = datetime.datetime.now()
     with open("index.md", "w") as f:
         f.write(f"---\n")
@@ -94,18 +87,7 @@ def main():
         f.write(f"to bring the cake next week. See you all on the Wednesday the {next_wednesday()}!\n")
         f.write(f"\n")
         f.write(f"\n")
-        f.write(f"Updated on {now.strftime('%Y-%m-%d %H:%M:%S')}\n")
-
-
-The Cake Fairy has chosen:
-  -  Name1
-  -  Name2
-  -  Name3
-
-
-
-
-Updated xxx
+        f.write(f"Updated {now.strftime('%Y-%m-%d %H:%M:%S')}\n")
 
 
 if __name__ == "__main__":
