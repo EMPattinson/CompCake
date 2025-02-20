@@ -1,12 +1,10 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Cake Fairy
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   schedule:
-    - cron: "0 0 * * 1"  # Runs every Monday at midnight UTC
+    - cron: "15 11 * * 3"  # Runs every Wednesday at 11 am UTC
   workflow_dispatch:  # Allows manual execution
 
 jobs:
@@ -33,6 +31,4 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git add .
           git commit -m "Automated update $(date +'%Y-%m-%d %H:%M:%S')" || exit 0
-          git push origin HEAD:main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git push https://x-access-token:${{ secrets.CAKE_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
