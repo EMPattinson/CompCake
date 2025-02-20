@@ -1,5 +1,5 @@
 import random
-import datetime, timedelta
+import datetime
 
 import csv
 
@@ -57,7 +57,7 @@ def next_wednesday():
     days_until_wednesday = (2 - today.weekday()) % 7  # 2 is Wednesday (Monday=0, Sunday=6)
     if days_until_wednesday == 0:
         days_until_wednesday = 7  # If today is Wednesday, get next week's Wednesday
-    next_wed = today + timedelta(days=days_until_wednesday)
+    next_wed = today + datetime.timedelta(days=days_until_wednesday)
     return next_wed.day  # Return the day of the month
 
 
