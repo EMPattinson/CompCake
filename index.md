@@ -2,12 +2,12 @@
 layout: default
 ---
 
-#  CompCake
-
-The cake fairy has chosen:
+The Cake Fairy has chosen:
   -  Name1
   -  Name2
   -  Name3
-    
-To bring the cake next week, see you all on the 26th!
 
+to bring the cake next week. See you all on the Wednesday the xxx!
+
+
+Updated xxx
