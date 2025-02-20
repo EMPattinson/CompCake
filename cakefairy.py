@@ -53,7 +53,7 @@ def write_names_and_weights(file_path, names, weights):
 
 
 def next_wednesday():
-    today = datetime.today()
+    today = datetime.datetime.today()
     days_until_wednesday = (2 - today.weekday()) % 7  # 2 is Wednesday (Monday=0, Sunday=6)
     if days_until_wednesday == 0:
         days_until_wednesday = 7  # If today is Wednesday, get next week's Wednesday
