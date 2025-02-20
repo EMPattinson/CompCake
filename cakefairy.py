@@ -1,5 +1,5 @@
 import random
-import datetime
+import datetime, timedelta
 
 import csv
 
@@ -59,6 +59,14 @@ def add_name(new_name, names, weights):
 
     return names, weights
 
+def next_wednesday():
+    today = datetime.today()
+    days_until_wednesday = (2 - today.weekday()) % 7  # 2 is Wednesday (Monday=0, Sunday=6)
+    if days_until_wednesday == 0:
+        days_until_wednesday = 7  # If today is Wednesday, get next week's Wednesday
+    next_wed = today + timedelta(days=days_until_wednesday)
+    return next_wed.day  # Return the day of the month
+
 def main():
 
     file_path = 'names.csv'
@@ -78,16 +86,27 @@ def main():
         f.write(f"layout: default\n")
         f.write(f"---\n")
         f.write(f"\n")
-        f.write(f"#  CompCake\n")
-        f.write(f"\n")
         f.write(f"The cake fairy has chosen:\n")
         f.write(f"  -  {drawn_names[0]}\n")
         f.write(f"  -  {drawn_names[1]}\n")
         f.write(f"  -  {drawn_names[2]}\n")
         f.write(f"\n")
-        f.write(f"To bring the cake next week, see you all on the 26th!\n")
+        f.write(f"to bring the cake next week. See you all on the Wednesday the {next_wednesday()}!\n")
         f.write(f"\n")
         f.write(f"\n")
-        f.write(f"# Updated on {now.strftime('%Y-%m-%d %H:%M:%S')}\n")
+        f.write(f"Updated on {now.strftime('%Y-%m-%d %H:%M:%S')}\n")
+
+
+The Cake Fairy has chosen:
+  -  Name1
+  -  Name2
+  -  Name3
+
+
+
+
+Updated xxx
+
+
 if __name__ == "__main__":
     main()
