@@ -2,12 +2,12 @@
 layout: default
 ---
 
-The Cake Fairy has chosen:
-  -  Name1
-  -  Name2
-  -  Name3
+The cake fairy has chosen:
+  -  Peter
+  -  George
+  -  Jean
 
-to bring the cake next week. See you all on the Wednesday the xxx!
+to bring the cake next week. See you all on the Wednesday the 26!
 
 
-Updated xxx
+Updated 2025-02-20 13:09:06
