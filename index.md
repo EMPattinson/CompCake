@@ -3,9 +3,9 @@ layout: default
 ---
 
 The cake fairy has chosen:
-  -  David
-  -  Oliver
-  -  Adam W.
+  -  Jean
+  -  Catherine
+  -  Madhulika
 
 to bring the cake next week. See you all on the Wednesday the 26!
 
