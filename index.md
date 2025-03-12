@@ -3,11 +3,11 @@ layout: default
 ---
 
 The cake fairy has chosen:
-  -  Gregor
-  -  Oliver
-  -  Peter
+  -  Urvi
+  -  Jean
+  -  Adam M.
 
-to bring the cake next week. See you all on the Wednesday the 12!
+to bring the cake next week. See you all on the Wednesday the 19!
 
 
-Updated 2025-03-05 11:23:08
+Updated 2025-03-12 11:23:28
