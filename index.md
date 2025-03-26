@@ -3,11 +3,11 @@ layout: default
 ---
 
 The cake fairy has chosen:
-  -  Sophie
+  -  Clara
   -  Peter
-  -  Lucy
+  -  Jacob
 
-to bring the cake next week. See you all on the Wednesday the 26!
+to bring the cake next week. See you all on the Wednesday the 2!
 
 
-Updated 2025-03-19 11:23:45
+Updated 2025-03-26 11:23:43
