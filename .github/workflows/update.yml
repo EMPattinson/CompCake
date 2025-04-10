@@ -4,7 +4,7 @@ name: Cake Fairy
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   schedule:
-    - cron: "15 11 * * 3"  # Runs every Wednesday at 11 am UTC
+    - cron: "15 10 * * 3"  # Runs every Wednesday at 10 am UTC, 11am BST
   workflow_dispatch:  # Allows manual execution
 
 jobs:
