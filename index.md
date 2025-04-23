@@ -3,11 +3,11 @@ layout: default
 ---
 
 The cake fairy has chosen:
-  -  Gregor
-  -  Oliver
-  -  Adam W.
+  -  Madhulika
+  -  Mateusz
+  -  Tahlia
 
-to bring the cake next week. See you all on the Wednesday the 23!
+to bring the cake next week. See you all on the Wednesday the 30!
 
 
-Updated 2025-04-16 10:35:39
+Updated 2025-04-23 10:35:57
