@@ -3,11 +3,11 @@ layout: default
 ---
 
 The cake fairy has chosen:
-  -  Michael
-  -  Oliver
-  -  David
+  -  Madhulika
+  -  Euan
+  -  Lucy
 
-to bring the cake next week. See you all on the Wednesday the 7!
+to bring the cake next week. See you all on the Wednesday the 14!
 
 
-Updated 2025-04-30 10:34:31
+Updated 2025-05-07 10:36:04
