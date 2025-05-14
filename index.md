@@ -3,11 +3,11 @@ layout: default
 ---
 
 The cake fairy has chosen:
-  -  Madhulika
   -  Euan
-  -  Lucy
+  -  Jean
+  -  Anya
 
-to bring the cake next week. See you all on the Wednesday the 14!
+to bring the cake next week. See you all on the Wednesday the 21!
 
 
-Updated 2025-05-07 10:36:04
+Updated 2025-05-14 10:35:43
