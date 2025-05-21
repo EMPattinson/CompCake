@@ -3,11 +3,11 @@ layout: default
 ---
 
 The cake fairy has chosen:
-  -  Euan
-  -  Jean
-  -  Anya
+  -  Sophie
+  -  Clara
+  -  Josh
 
-to bring the cake next week. See you all on the Wednesday the 21!
+to bring the cake next week. See you all on the Wednesday the 28!
 
 
-Updated 2025-05-14 10:35:43
+Updated 2025-05-21 10:36:05
