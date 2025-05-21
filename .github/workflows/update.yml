@@ -22,8 +22,16 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Run Python script
-        run: python cakefairy.py
+#    Note: Running every other week is a pain in the arse, so instead running every week and using a boolean that is set to != itself every week might be the easiest solution
+#    I.E. 
+#          if x == 1:
+#            Run "cakefairy.py"
+#            x = 0
+#          elif x == 0:
+#            x = 1
+
+#      - name: Run Python script
+#        run: python cakefairy.py
 
       - name: Commit and push changes
         run: |
