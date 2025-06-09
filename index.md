@@ -4,7 +4,7 @@ layout: default
 
 The cake fairy has chosen:
   -  Adam W.
-  -  Urvi
+  -  Oskar
   -  Michael
 
 to bring the cake next week. See you all on the Wednesday the 11!
