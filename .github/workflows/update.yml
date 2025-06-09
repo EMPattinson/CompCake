@@ -3,8 +3,8 @@ name: Cake Fairy
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
-  schedule:
-    - cron: "15 10 * * 3"  # Runs every Wednesday at 10 am UTC, 11am BST
+# schedule:
+#    - cron: "15 10 * * 3"  # Runs every Wednesday at 10 am UTC, 11am BST
   workflow_dispatch:  # Allows manual execution
 
 jobs:
@@ -30,8 +30,8 @@ jobs:
 #          elif x == 0:
 #            x = 1
 
-#      - name: Run Python script
-#        run: python cakefairy.py
+      - name: Run Python script
+        run: python cakefairy.py
 
       - name: Commit and push changes
         run: |
