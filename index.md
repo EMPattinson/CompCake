@@ -7,7 +7,7 @@ The cake fairy has chosen:
   -  Catherine
   -  David
 
-to bring the cake next week. See you all on the Wednesday the 25!
+to bring the cake next week. See you all on the Wednesday the 2nd!
 
 
 Updated 2025-06-20 10:09:46
