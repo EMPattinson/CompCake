@@ -5,7 +5,7 @@ layout: default
 The cake fairy has chosen:
   -  George
   -  Catherine
-  -  Mateusz
+  -  David
 
 to bring the cake next week. See you all on the Wednesday the 25!
 
