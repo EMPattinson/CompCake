@@ -3,7 +3,7 @@ layout: default
 ---
 
 The cake fairy has chosen:
-  -  George
+  -  Clara
   -  Catherine
   -  David
 
