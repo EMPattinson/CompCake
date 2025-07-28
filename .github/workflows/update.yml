@@ -6,7 +6,7 @@ on:
 # schedule:
 #    - cron: "15 10 * * 3"  # Runs every Wednesday at 10 am UTC, 11am BST
   workflow_dispatch:  # Allows manual execution
-
+  
 jobs:
   update-content:
     runs-on: ubuntu-latest
@@ -22,16 +22,11 @@ jobs:
         with:
           python-version: "3.x"
 
-#    Note: Running every other week is a pain in the arse, so instead running every week and using a boolean that is set to != itself every week might be the easiest solution
-#    I.E. 
-#          if x == 1:
-#            Run "cakefairy.py"
-#            x = 0
-#          elif x == 0:
-#            x = 1
-
       - name: Run Python script
-        run: python cakefairy.py
+        run: |
+             python cakefairy.py ${{ vars.BIWEEKLY }}  # If we feed in True we actually draw new names, otherwise it just exits the script
+             gh variable set TEST_VAR --body False
+  
 
       - name: Commit and push changes
         run: |
