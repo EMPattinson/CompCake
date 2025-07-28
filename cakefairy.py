@@ -1,5 +1,6 @@
 import random
 import datetime
+import argparse
 
 import csv
 
@@ -91,4 +92,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-d',    '--draw_name',    type=boolean,            default=False,     help='Boolean, new names will be drawn only if True')
+    draw_name = parser.parse_args().draw_name
+    if draw_name == True:
+        main()
