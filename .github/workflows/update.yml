@@ -6,7 +6,10 @@ on:
 # schedule:
 #    - cron: "15 10 * * 3"  # Runs every Wednesday at 10 am UTC, 11am BST
   workflow_dispatch:  # Allows manual execution
-  
+
+env:
+    GH_TOKEN: ${{ secrets.CAKE_TOKEN }}
+    
 jobs:
   update-content:
     runs-on: ubuntu-latest
