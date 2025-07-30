@@ -3,11 +3,11 @@ layout: default
 ---
 
 The cake fairy has chosen:
-  -  Oskar
-  -  Michael
-  -  Josh
+  -  Jess
+  -  Tahlia
+  -  Jean
 
-to bring the cake next week. See you all on the Wednesday the 30!
+to bring the cake next week. See you all on the Wednesday the 13!
 
 
-Updated 2025-07-28 11:12:24
+Updated 2025-07-30 10:43:16
