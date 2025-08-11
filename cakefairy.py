@@ -93,7 +93,10 @@ def main():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('-d',    '--draw_name',    type=bool,            default=False,     help='Boolean, new names will be drawn only if True')
+    feature_parser = parser.add_mutually_exclusive_group(required=False)
+    feature_parser.add_argument('-y',    '--on_week' ,    dest='draw_name',   action='store_true' ,     help='Call this option to draw new names')
+    feature_parser.add_argument('-n',    '--off_week',    dest='draw_name',   action='store_false',     help='Call this option to expilicity skip drawing names (this is also the default behaviour)')
+    parser.set_defaults(draw_name=False)
     draw_name = parser.parse_args().draw_name
     if draw_name == True:
         main()
