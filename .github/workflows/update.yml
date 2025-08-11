@@ -27,9 +27,9 @@ jobs:
 
       - name: Run Python script
         run: |
-             python cakefairy.py -d ${{ vars.BIWEEKLY }}  # If we feed in True we actually draw new names, otherwise it just exits the script
-             if [ ${{ vars.BIWEEKLY }} == True ];then gh variable set BIWEEKLY --body False; fi
-             if [ ${{ vars.BIWEEKLY }} == False ];then gh variable set BIWEEKLY --body True; fi
+             python cakefairy.py --${{ vars.BIWEEKLY }}  # If we feed in True we actually draw new names, otherwise it just exits the script
+             if [ ${{ vars.BIWEEKLY }} == "on_week" ];then gh variable set BIWEEKLY --body "off_week"; fi
+             if [ ${{ vars.BIWEEKLY }} == "off_week" ];then gh variable set BIWEEKLY --body "on_week"; fi
   
 
       - name: Commit and push changes
