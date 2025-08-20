@@ -5,7 +5,7 @@ layout: default
 The cake fairy has chosen:
   -  Madhulika
   -  Catherine
-  -  Adam M.
+  -  Mateusz
 
 to bring the cake next week. See you all on the Wednesday the 27!
 
