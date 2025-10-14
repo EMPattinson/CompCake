@@ -4,7 +4,7 @@ name: Cake Fairy
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   schedule:
-    - cron: "15 16 * * 3"  # Runs every Wednesday at 10 am UTC, 11am BST
+    - cron: "19 10 * * 1"  # Tries to run every Monday at 10:19 (uses an odd time to not clash with peaks in Github usage)
   workflow_dispatch:  # Allows manual execution
 
 env:
@@ -26,10 +26,14 @@ jobs:
           python-version: "3.x"
 
       - name: Run Python script
+        if: github.event.schedule == '* * 8-15,22-29 * *'  #  If it's a date that lines up with this being the second or fourth Monday of the month
         run: |
-             python cakefairy.py --${{ vars.BIWEEKLY }}  # If we feed in True we actually draw new names, otherwise it just exits the script
-             if [ ${{ vars.BIWEEKLY }} == "on_week" ];then gh variable set BIWEEKLY --body "off_week"; fi
-             if [ ${{ vars.BIWEEKLY }} == "off_week" ];then gh variable set BIWEEKLY --body "on_week"; fi
+             python cakefairy.py --True
+
+             #  Following were used when running once every other week, keeping here for now for future reference
+             #python cakefairy.py --${{ vars.BIWEEKLY }}  # If we feed in True we actually draw new names, otherwise it just exits the script
+             #if [ ${{ vars.BIWEEKLY }} == "on_week" ];then gh variable set BIWEEKLY --body "off_week"; fi
+             #if [ ${{ vars.BIWEEKLY }} == "off_week" ];then gh variable set BIWEEKLY --body "on_week"; fi
   
 
       - name: Commit and push changes
