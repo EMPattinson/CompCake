@@ -1,0 +1,41 @@
+name: Manual Draw
+
+# Controls when the workflow will run
+on:
+  workflow_dispatch:  # Allows manual execution
+
+env:
+    GH_TOKEN: ${{ secrets.CAKE_TOKEN }}
+    
+jobs:
+  update-content:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Run Python script
+        run: |
+             python cakefairy.py --on_week
+
+             #  Following were used when running once every other week, keeping here for now for future reference
+             #python cakefairy.py --${{ vars.BIWEEKLY }}  # If we feed in True we actually draw new names, otherwise it just exits the script
+             #if [ ${{ vars.BIWEEKLY }} == "on_week" ];then gh variable set BIWEEKLY --body "off_week"; fi
+             #if [ ${{ vars.BIWEEKLY }} == "off_week" ];then gh variable set BIWEEKLY --body "on_week"; fi
+  
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions@github.com"
+          git add .
+          git commit -m "Automated update $(date +'%Y-%m-%d %H:%M:%S')" || exit 0
+          git push https://x-access-token:${{ secrets.CAKE_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
