@@ -4,7 +4,7 @@ layout: default
 
 The cake fairy has chosen:
   -  Tahlia
-  -  Euan P.
+  -  Peter
   -  Mateusz
 
 to bring the cake next week. See you all on the Wednesday the 23!
