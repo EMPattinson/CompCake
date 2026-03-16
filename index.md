@@ -5,7 +5,7 @@ layout: default
 The cake fairy has chosen:
   -  Adam M.
   -  Lewis
-  -  Jean
+  -  George
 
 to bring the cake next week. See you all on the Wednesday the 30!
 
