@@ -3,11 +3,11 @@ layout: default
 ---
 
 The cake fairy has chosen:
-  -  Adam M.
-  -  Lewis
-  -  George
+  -  Abby
+  -  Mateusz
+  -  David
 
-to bring the cake next week. See you all on the Wednesday the 30!
+to bring the cake next week. See you all on the Wednesday the 4!
 
 
-Updated 2026-03-16 12:58:05
+Updated 2026-04-21 10:06:39
