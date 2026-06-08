@@ -28,13 +28,7 @@ jobs:
       - name: Run Python script
         if: github.event.schedule == '* * 8-15,22-29 * *'  #  If it's a date that lines up with this being the second or fourth Monday of the month
         run: |
-             python cakefairy.py --on_week
-
-             #  Following were used when running once every other week, keeping here for now for future reference
-             #python cakefairy.py --${{ vars.BIWEEKLY }}  # If we feed in True we actually draw new names, otherwise it just exits the script
-             #if [ ${{ vars.BIWEEKLY }} == "on_week" ];then gh variable set BIWEEKLY --body "off_week"; fi
-             #if [ ${{ vars.BIWEEKLY }} == "off_week" ];then gh variable set BIWEEKLY --body "on_week"; fi
-  
+             python cakefairy.py   
 
       - name: Commit and push changes
         run: |
