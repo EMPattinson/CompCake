@@ -3,11 +3,11 @@ layout: default
 ---
 
 The cake fairy has chosen:
-  -  Craig
-  -  Josh
-  -  Tahlia
+  -  Mateusz
+  -  Peter
+  -  Euan P.
 
-to bring the cake next week. See you all on the Wednesday the 1!
+to bring the cake next week. See you all on the Wednesday the 22!
 
 
-Updated 2026-05-21 10:03:02
+Updated 2026-06-08 10:38:29
