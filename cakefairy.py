@@ -63,6 +63,22 @@ def next_cakeday():
 
 
 def main():
+    
+    #   Get current date
+    now = datetime.datetime.now()
+
+    #   Check if date is on the 2nd or 4th week of the month
+    if (now.day-1) // 7 == 1:
+        #   Must be the second week of the month, so seminar ran and new names need drawing
+        next_session = "normal"
+    elif (now.day-1) // 7 == 3:
+        #   Must be the fourth week of the month, so normal session ran and new names need drawing, and the seminar advertising
+        next_session = "seminar"
+    else:
+        #   If it is neither the second nor fourth Monday of the month, CompCake should not have ran and nothing needs doing
+        exit()
+    
+    #   Drawing names and updating the website
 
     file_path = 'names.csv'
 
@@ -74,29 +90,35 @@ def main():
     write_names_and_weights(file_path, names, new_weights)
 
     # Generate new content
-    now = datetime.datetime.now()
-    with open("index.md", "w") as f:
-        f.write(f"---\n")
-        f.write(f"layout: default\n")
-        f.write(f"---\n")
-        f.write(f"\n")
-        f.write(f"The cake fairy has chosen:\n")
-        f.write(f"  -  {drawn_names[0]}\n")
-        f.write(f"  -  {drawn_names[1]}\n")
-        f.write(f"  -  {drawn_names[2]}\n")
-        f.write(f"\n")
-        f.write(f"to bring the cake next week. See you all on the Wednesday the {next_cakeday()}!\n")
-        f.write(f"\n")
-        f.write(f"\n")
-        f.write(f"Updated {now.strftime('%Y-%m-%d %H:%M:%S')}\n")
+    if 1 == 1:
+        print(f"---\n"
+        ,f"layout: default\n"
+        ,f"---\n"
+        ,f"\n"
+        ,f"The cake fairy has chosen:\n"
+        ,f"  -  {drawn_names[0]}\n"
+        ,f"  -  {drawn_names[1]}\n"
+        ,f"  -  {drawn_names[2]}\n"
+        ,f"\n"
+        ,f"to bring the cake next week. See you all on Monday the {next_cakeday()}!\n"
+        ,f"\n"
+        ,f"\n"
+        ,f"Updated {now.strftime('%Y-%m-%d %H:%M:%S')}\n")
+    # with open("index.md", "w") as f:
+    #     f.write(f"---\n")
+    #     f.write(f"layout: default\n")
+    #     f.write(f"---\n")
+    #     f.write(f"\n")
+    #     f.write(f"The cake fairy has chosen:\n")
+    #     f.write(f"  -  {drawn_names[0]}\n")
+    #     f.write(f"  -  {drawn_names[1]}\n")
+    #     f.write(f"  -  {drawn_names[2]}\n")
+    #     f.write(f"\n")
+    #     f.write(f"to bring the cake next week. See you all on Monday the {next_cakeday()}!\n")
+    #     f.write(f"\n")
+    #     f.write(f"\n")
+    #     f.write(f"Updated {now.strftime('%Y-%m-%d %H:%M:%S')}\n")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    feature_parser = parser.add_mutually_exclusive_group(required=False)
-    feature_parser.add_argument('-y',    '--on_week' ,    dest='draw_name',   action='store_true' ,     help='Call this option to draw new names')
-    feature_parser.add_argument('-n',    '--off_week',    dest='draw_name',   action='store_false',     help='Call this option to expilicity skip drawing names (this is also the default behaviour)')
-    parser.set_defaults(draw_name=False)
-    draw_name = parser.parse_args().draw_name
-    if draw_name == True:
-        main()
+    main()
