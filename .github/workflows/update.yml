@@ -26,7 +26,6 @@ jobs:
           python-version: "3.x"
 
       - name: Run Python script
-        if: github.event.schedule == '* * 8-15,22-29 * *'  #  If it's a date that lines up with this being the second or fourth Monday of the month
         run: |
              python cakefairy.py   
 
