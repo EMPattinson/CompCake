@@ -63,6 +63,9 @@ def next_cakeday():
 
 
 def main():
+    #   Get current date
+    now = datetime.datetime.now()
+    
     #   Drawing names and updating the website
 
     file_path = 'names.csv'
