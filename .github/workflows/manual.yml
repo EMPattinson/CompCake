@@ -24,7 +24,7 @@ jobs:
 
       - name: Run Python script
         run: |
-             python cakefairy.py --on_week
+             python manual_fairy.py --on_week
 
              #  Following were used when running once every other week, keeping here for now for future reference
              #python cakefairy.py --${{ vars.BIWEEKLY }}  # If we feed in True we actually draw new names, otherwise it just exits the script
