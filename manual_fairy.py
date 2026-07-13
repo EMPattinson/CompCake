@@ -78,34 +78,20 @@ def main():
     write_names_and_weights(file_path, names, new_weights)
 
     # Generate new content
-    if 1 == 1:
-        print(f"---\n"
-        ,f"layout: default\n"
-        ,f"---\n"
-        ,f"\n"
-        ,f"The cake fairy has chosen:\n"
-        ,f"  -  {drawn_names[0]}\n"
-        ,f"  -  {drawn_names[1]}\n"
-        ,f"  -  {drawn_names[2]}\n"
-        ,f"\n"
-        ,f"to bring the cake next week. See you all on Monday the {next_cakeday()}!\n"
-        ,f"\n"
-        ,f"\n"
-        ,f"Updated {now.strftime('%Y-%m-%d %H:%M:%S')}\n")
-    # with open("index.md", "w") as f:
-    #     f.write(f"---\n")
-    #     f.write(f"layout: default\n")
-    #     f.write(f"---\n")
-    #     f.write(f"\n")
-    #     f.write(f"The cake fairy has chosen:\n")
-    #     f.write(f"  -  {drawn_names[0]}\n")
-    #     f.write(f"  -  {drawn_names[1]}\n")
-    #     f.write(f"  -  {drawn_names[2]}\n")
-    #     f.write(f"\n")
-    #     f.write(f"to bring the cake next week. See you all on Monday the {next_cakeday()}!\n")
-    #     f.write(f"\n")
-    #     f.write(f"\n")
-    #     f.write(f"Updated {now.strftime('%Y-%m-%d %H:%M:%S')}\n")
+    with open("index.md", "w") as f:
+        f.write(f"---\n")
+        f.write(f"layout: default\n")
+        f.write(f"---\n")
+        f.write(f"\n")
+        f.write(f"The cake fairy has chosen:\n")
+        f.write(f"  -  {drawn_names[0]}\n")
+        f.write(f"  -  {drawn_names[1]}\n")
+        f.write(f"  -  {drawn_names[2]}\n")
+        f.write(f"\n")
+        f.write(f"to bring the cake next week. See you all on Monday the {next_cakeday()}!\n")
+        f.write(f"\n")
+        f.write(f"\n")
+        f.write(f"Updated {now.strftime('%Y-%m-%d %H:%M:%S')}\n")
 
 
 if __name__ == "__main__":
