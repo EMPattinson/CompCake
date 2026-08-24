@@ -3,11 +3,11 @@ layout: default
 ---
 
 The cake fairy has chosen:
-  -  Pip C.
-  -  Lewis O.
-  -  Oskar
+  -  Peter G.
+  -  Euan P.
+  -  Leah G.
 
-to bring the cake next week. See you all on Monday the 24!
+to bring the cake next week. See you all on Monday the 7!
 
 
-Updated 2026-08-10 11:19:57
+Updated 2026-08-24 12:21:41
