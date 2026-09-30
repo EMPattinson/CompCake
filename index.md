@@ -3,9 +3,9 @@ layout: default
 ---
 
 The cake fairy has chosen:
-  -  Oliver C.
+  -  Abby P.
   -  Milo C.
-  -  David S.
+  -  Andrew T.
 
 to bring the cake next week. See you all on Monday the 12!
 
