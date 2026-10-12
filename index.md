@@ -3,11 +3,11 @@ layout: default
 ---
 
 The cake fairy has chosen:
-  -  Abby P.
-  -  Josh H.
-  -  Andrew T.
+  -  Milo C.
+  -  Sarah B.
+  -  Marley K.
 
-to bring the cake next week. See you all on Monday the 12!
+to bring the cake next week. See you all on Monday the 26!
 
 
-Updated 2026-09-28 18:09:38
+Updated 2026-10-12 19:47:47
