@@ -3,11 +3,11 @@ layout: default
 ---
 
 The cake fairy has chosen:
-  -  Mateusz M.
-  -  Daniel C.
-  -  Milo C.
+  -  Peter G.
+  -  Martin v. H.
+  -  George
 
-to bring the cake next week. See you all on Monday the 9!
+to bring the cake next week. See you all on Monday the 23!
 
 
-Updated 2026-10-26 16:47:05
+Updated 2026-11-09 20:43:04
