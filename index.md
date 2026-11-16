@@ -3,7 +3,7 @@ layout: default
 ---
 
 The cake fairy has chosen:
-  -  Peter G.
+  -  Euan P.
   -  Martin v. H.
   -  George
 
