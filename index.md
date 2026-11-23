@@ -3,11 +3,11 @@ layout: default
 ---
 
 The cake fairy has chosen:
-  -  Euan P.
-  -  Martin v. H.
-  -  George
+  -  Abby P.
+  -  Lewis S.
+  -  Christopher H.
 
-to bring the cake next week. See you all on Monday the 23!
+to bring the cake next week. See you all on Monday the 7!
 
 
-Updated 2026-11-09 20:43:04
+Updated 2026-11-23 16:48:47
